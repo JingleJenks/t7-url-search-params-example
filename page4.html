@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Page 3</h1>
+    <p class="beer">Sweet, first ones on me!</p>
+    <p class="nobeer">Well I didnt want to get one with you either!</p>
+
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const yes = urlParams.get("yes");
+        if (yes === "beer") {
+            document.querySelector(".no").remove();
+        } else {
+            document.querySelector(".yes").remove();
+        }
+    </script>
+</body>
+
+</html>
