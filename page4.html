@@ -16,11 +16,11 @@
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const yes = urlParams.get("yes");
-        if (yes === "beer") {
-            document.querySelector(".no").remove();
+        const beer = urlParams.get("beer");
+        if (beer === "yes") {
+            document.querySelector(".nobeer").remove();
         } else {
-            document.querySelector(".yes").remove();
+            document.querySelector(".beer").remove();
         }
     </script>
 </body>
